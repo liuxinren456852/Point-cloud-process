@@ -121,7 +121,7 @@ def ground_segmentation(data):
         print("内点比例:%.2f"%(inlier.shape[0]/data.shape[0]))
 
         if(inlier_cloud.shape[0]/data.shape[0] > inline_percent):                               # 提前停止条件
-            break;
+            break
 
     print('origin data points num:', data.shape[0])
     print('segmented data points num:', segmengted_cloud.shape[0])
