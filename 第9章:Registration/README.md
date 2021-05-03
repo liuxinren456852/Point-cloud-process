@@ -46,3 +46,5 @@
 
 最后的评估结果保存在**./registration_dataset/reg_result_teamo.txt**
 
+同时，也提供了自己参考github和open3d源代码实现的RANSAC配准流程，详细的代码参考[here](./Registration.py)，相应的评估结果保存在**./registration_dataset/reg_result_teamo1998_test.txt**
+
