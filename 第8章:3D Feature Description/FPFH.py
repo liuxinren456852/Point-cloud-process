@@ -66,8 +66,8 @@ def SFPH(pcd,search_tree,key_point,radius,B):
     theta = np.reshape(np.arctan2((w*n2).sum(axis = 1),(u*n2).sum(axis = 1)),(k-1,1))
 
     # 计算相应的直方图
-    alpha_hist = np.reshape(np.histogram(alpha,B,range=[-3.14,3.14])[0],(1,B))
-    phi_hist = np.reshape(np.histogram(phi,B,range=[-3.14,3.14])[0],(1,B))
+    alpha_hist = np.reshape(np.histogram(alpha,B,range=[-1.0,1.0])[0],(1,B))
+    phi_hist = np.reshape(np.histogram(phi,B,range=[-1.0,1.0])[0],(1,B))
     theta_hist = np.reshape(np.histogram(theta,B,range=[-3.14,3.14])[0],(1,B))
 
  
